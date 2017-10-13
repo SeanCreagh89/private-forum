@@ -1,2 +1,2 @@
 # private-forum
-WordPress I created for a client who wanted a members only site.
+Custom WordPress theme developed for a client who wanted a members only site.
