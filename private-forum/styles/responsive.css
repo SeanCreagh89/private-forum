@@ -1,0 +1,146 @@
+/*
+
+	Theme Name: Private Forum
+	Author: Sean Creagh
+	Description: Private Forum Responsive Layout
+	Version: 1.0
+
+*/
+
+
+
+@media screen and ( max-width: 1020px ) {
+
+	/* --- Header Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Header | #Top-bar Styles --- */
+
+	#Top-bar .container #Navigation-bar #Navigation { display: none; }
+	#Top-bar .container #Navigation-bar #Navimobile { display: block }
+
+
+
+	/* --- Content Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Content | #Blog-posts Styles --- */
+
+	#Blog-posts .post-repository { max-width: 646.66px; margin: 0 auto; }
+
+	/* --- Content | #Garage-posts Styles --- */
+
+	#Garage-posts .container #Garage.post-container .post-repository { max-width: 646.66px; margin: 0 auto; }
+
+
+
+	/* --- Theme Footer Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Footer | #Footnote-bar Styles --- */
+
+	#Footnote-bar .container p { line-height: inherit; padding: 15.5px 0; }
+
+}
+
+@media screen and ( max-width: 900px ) {
+
+	#Comments .container .comment-list .comment .comment-meta .comment-author .photo { display: none; }
+
+}
+
+@media screen and ( max-width: 820px ) {
+
+	/* --- Header Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Header | #Breadcrumbs-bar Styles --- */
+
+	#Breadcrumbs-bar .container { height: 150px; }
+	#Breadcrumbs-bar .container #Breadcrumbs { display: none; }
+	#Breadcrumbs-bar .container #Breadcrumb-widgets { width: 100%; max-width: 245px; margin: 0 auto; padding: 20px 0; display: block; float: none; }
+	#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets { margin: 5px 0; }
+	#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:only-of-type { margin: 0; }
+	#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:first-of-type { margin: 0 0 5px 0; }
+	#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:last-of-type { margin: 5px 0 0 0; }
+
+}
+
+@media screen and ( max-width: 782px ) { #Top-bar .container #Navigation-bar #Navimobile #Navimenu.admin { margin-top: 46px; } }
+
+@media screen and ( max-width: 700px ) {
+
+	/* --- Content Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Content | #Blog-posts Styles --- */
+
+	#Blog-posts .post-repository { max-width: 323.33px; }
+	#Blog-posts .post-repository .post-wrapper { margin: 10px 0; }
+
+	/* --- Content | #Report-posts Styles --- */
+
+	#Report-posts .container #Report.post-container .post-wrapper .post-meta { float: left; }
+	#Report-posts .container #Report.post-container .post-wrapper .post-meta span { text-align: left; }
+
+	/* --- Content | #Garage-posts Styles --- */
+
+	#Garage-posts .container #Garage.post-container .post-repository { max-width: 323.33px; }
+	#Garage-posts .container #Garage.post-container .post-repository .post-wrapper { margin: 10px 0; }
+
+	/* --- Content | Single Post Styles --- */
+
+	.single .container .post-title h2 { font-size: 30px; }
+
+	/* --- Content | #Single-garage Post Styles --- */
+
+	#Single-garage .container .post-wrapper .garage-details,
+	#Single-garage .container .post-wrapper .garage-details ul[class^="garage-"],
+	#Single-garage .container .post-wrapper .post-map { width: 100%; }
+
+	#Single-garage .container .post-wrapper .garage-details.no-map .post-thumbnail,
+	#Single-garage .container .post-wrapper .garage-details.no-map ul[class^="garage-"] { width: 100% !important; }
+
+
+
+	/* --- Theme Footer Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Footer | #Footer-widgets-bar Styles --- */
+
+	#Footer-widgets-bar .container div[class$="-width"] { width: 100%; margin-bottom: 20px; }
+	#Footer-widgets-bar .container div[class$="-width"]:last-of-type { margin-bottom: 0; }
+
+}
+
+@media screen and ( max-width: 700px ) {
+
+	/* --- Content Styles --- */
+
+	/* --- ******************** ******************** ******************** --- */
+
+	/* --- Content | #Report-posts Styles --- */
+
+	#Single-bad-debt .container .post-wrapper .report-details.vehicle,
+	#Single-bad-debt .container .post-wrapper .report-details.work { width: 100%; float: none; }
+
+	/* --- Content | Form Styles --- */
+
+	#Report-posts .container .form-print-wrapper #form-print,
+	#Garage-posts .container .form-print-wrapper #form-print { margin: 0 auto; display: block; float: none; }
+	#Report-posts .container .form-wrapper, #Garage-posts .container .form-wrapper { padding: 15px 0; }
+	div[class^="form-control"] { width: 100%; }
+
+}
+
+@media screen and ( max-width: 350px ) {
+
+	.alignleft, .aligncenter, .alignright, .alignnone { width: 100%; margin: 0 0 10px 0; display: block; }
+
+}

@@ -1,0 +1,191 @@
+/*
+
+	Theme Name: Private Forum
+	Author: Sean Creagh
+	Description: Private Forum Fonts
+	Version: 1.0
+
+*/
+
+
+
+/* --- Default Theme Fonts and Sizes --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+body { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+
+h1 { font-size: 70px; }
+h2 { font-size: 50px; }
+h3 { font-size: 24px; }
+h4 { font-size: 24px; }
+h5 { font-size: 16px; }
+h6 { font-size: 10px; }
+
+#Site-title { font-size: 35px; }
+header .menu-item a { font-size: 18px; }
+#Breadcrumbs li, #Breadcrumbs a, #Breadcrumbs span { font-size: 12px; }
+#Breadcrumb-widgets a { font-size: 18px; }
+#Content p, #Content a { font-size: 16px; }
+
+
+
+/* --- Font Awesome Icon Classes --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Menu Icons --- */
+.icon-bars:before { content: "\f0c9"; }
+
+/* --- Utility Icons --- */
+.icon-search:before { content: "\f002"; }
+.icon-email:before { content: "\f003"; }
+.icon-times:before { content: "\f00d"; }
+.icon-clock-o:before { content: "\f017"; }
+.icon-calender:before { content: "\f073"; }
+.icon-mobile:before { content: "\f095"; }
+.icon-reply:before { content: "\f112"; }
+.icon-location-arrow:before { content: "\f124"; }
+.icon-calender-o:before { content: "\f133"; }
+.icon-sun-o:before { content: "\f185"; }
+.icon-hourglass-o:before { content: "\f250"; }
+.icon-hourglass-start:before { content: "\f251"; }
+.icon-hourglass-half:before { content: "\f252"; }
+.icon-hourglass-end:before { content: "\f253"; }
+.icon-hourglass:before { content: "\f254"; }
+.icon-calender-plus-o:before { content: "\f271"; }
+.icon-calender-minus-o:before { content: "\f272"; }
+.icon-calender-times-o:before { content: "\f273"; }
+.icon-calender-check-o:before { content: "\f274"; }
+.icon-map-pin:before { content: "\f276"; }
+.icon-address-book:before { content: "\f2b9"; }
+.icon-address-book-o:before { content: "\f2ba"; }
+.icon-window-close:before { content: "\f2d3"; }
+.icon-window-close-o:before { content: "\f2d4"; }
+
+/* --- Comment Icons --- */
+.icon-comment:before { content: "\f075"; }
+.icon-comments:before { content: "\f086"; }
+.icon-comment-o:before { content: "\f0e5"; }
+.icon-comments-o:before { content: "\f0e6"; }
+.icon-commenting:before { content: "\f27a"; }
+.icon-commenting-o:before { content: "\f27b"; }
+
+/* --- Arrow Icons --- */
+.icon-arrow-left:before { content: "\f060"; }
+.icon-arrow-right:before { content: "\f061"; }
+.icon-arrow-up:before { content: "\f062"; }
+.icon-arrow-down:before { content: "\f063"; }
+.icon-arrow-left-circle:before { content: "\f0a8"; }
+.icon-arrow-right-circle:before { content: "\f0a9"; }
+.icon-arrow-up-circle:before { content: "\f0aa"; }
+.icon-arrow-down-circle:before { content: "\f0ab"; }
+.icon-angle-left:before { content: "\f104";}
+.icon-angle-right:before { content: "\f105";}
+.icon-angle-up:before { content: "\f106";}
+.icon-angle-down:before { content: "\f107";}
+
+/* --- Social Media Icons --- */
+.icon-facebook:before { content: "\f09a"; }
+.icon-facebook-official:before { content: "\f230"; }
+.icon-facebook-square:before { content: "\f082"; }
+.icon-google:before { content: "\f1a0"; }
+.icon-google-plus:before { content: "\f0d5"; }
+.icon-google-plus-circle:before { content: "\f2b3"; }
+.icon-google-plus-square:before { content: "\f0d4"; }
+.icon-instagram:before { content: "\f16d"; }
+.icon-linkedin:before { content: "\f0e1"; }
+.icon-linkedin-square:before { content: "\f08c"; }
+.icon-pinterest:before { content: "\f0d2"; }
+.icon-pinterest-p:before { content: "\f231"; }
+.icon-pinterest-square:before { content: "\f0d3"; }
+.icon-reddit:before { content: "\f1a1"; }
+.icon-reddit-alien:before { content: "\f281"; }
+.icon-reddit-square:before { content: "\f1a2"; }
+.icon-skype:before { content: "\f17e"; }
+.icon-snapchat:before { content: "\f2ab"; }
+.icon-snapchat-ghost:before { content: "\f2ac"; }
+.icon-snapchat-square:before { content: "\f2ad"; }
+.icon-tumblr:before { content: "\f173"; }
+.icon-tumblr-square:before { content: "\f174"; }
+.icon-twitch:before { content: "\f1e8"; }
+.icon-twitter:before { content: "\f099"; }
+.icon-twitter-square:before { content: "\f081"; }
+.icon-vimeo:before { content: "\f27d"; }
+.icon-vimeo-square:before { content: "\f194"; }
+.icon-vine:before { content: "\f1ca"; }
+.icon-whatsapp:before { content: "\f232"; }
+.icon-youtube:before { content: "\f167"; }
+.icon-youtube-play:before { content: "\f16a"; }
+.icon-youtube-square:before { content: "\f166"; }
+
+i[class^="icon-"]:before { font-family: FontAwesome; }
+
+
+
+/* --- Content Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Content | #404 Styles --- */
+
+#Error404 .container h1 { font-size: 100px; }
+
+/* --- Content | #Report-posts Styles --- */
+
+#Blog-posts .container .post-repository { font-size: 0; }
+#Blog-posts .container .post-repository .post-wrapper { font-size: 16px; }
+
+/* --- Content | #Report-posts Styles --- */
+
+#Report-posts .container #Report.post-container .post-wrapper .post-title h2 { font-size: 25px; }
+#Report-posts .container #Report.post-container .post-wrapper .post-title span,
+#Report-posts .container #Report.post-container .post-wrapper .post-title span a,
+#Report-posts .container #Report.post-container .post-wrapper .post-meta span,
+#Report-posts .container #Report.post-container .post-wrapper .post-meta span a { font-size: 12px; }
+
+/* --- Content | #Garage-posts Styles --- */
+
+#Garage-posts .container #Garage.post-container .post-repository { font-size: 0; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .post-owner { font-size: 12px; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .contact-details i { font-size: 16px; }
+
+/* --- Content | Form Styles --- */
+
+div[class^="form-control"] .cancel { font-size: 20px; }
+div[class^="form-control"] .guide, div[class^="form-control"] .guide a { font-size: 12px !important; }
+
+/* --- Content | Post Styles--- */
+
+.single .container .post-meta ul li, .single .container .post-meta ul li a { font-size: 12px !important; }
+
+/* --- #Content | Comment Form Styles --- */
+
+#Comments .container h3 { font-size: 20px; }
+#Comments .container .comment-list .comment .comment-meta a { font-size: 12px; }
+#Comments .comment-form .logged-in-as a { font-size: 12px; }
+
+
+
+/* --- Theme Footer Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Footer | #Footer-widgets-bar Styles --- */
+
+#Footer-widgets-bar .container div .widget li div, #Footer-widgets-bar .container div .widget li div a { font-size: 16px; }
+
+/* --- Footer | #Footnote-bar Styles --- */
+
+#Footnote-bar .container p { font-size: 16px; }
+#Footnote-bar .container li div { font-size: 16px; }
+
+
+
+/* --- Theme Widgets Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Widgets | #Search-widget Styles --- */
+
+#Search-widget .widget-search .search-field { font-size: 18px; }

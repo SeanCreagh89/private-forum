@@ -1,0 +1,314 @@
+/*
+
+	Theme Name: Private Forum
+	Author: Sean Creagh
+	Description: Private Forum Layout
+	Version: 1.0
+
+*/
+
+
+
+/* --- CSS Reset --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+html, body, header, div, nav, ul, ol, li, h1, h2, h3, h4, h5, h6, p, span, strong, b, i, a, time, form, label, input, textarea, button, iframe, footer { font: inherit; font-size: 100%; text-decoration: none; margin: 0; padding: 0; border: 0; outline: 0; vertical-align: top; }
+
+
+
+/* --- Default Theme Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Default Container Elements Styles --- */
+
+html, body, header, footer, #Content, .wrapper { width: 100%; display: block; }
+
+.container { width: 100%; max-width: 1000px; margin: 0 auto; }
+.content.container { padding: 80px 15px; }
+.remove-spacing { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:after { content: "."; height: 0; margin: 0; padding: 0; display: block; visibility: hidden; clear: both; }
+
+.alignleft { margin: 0 10px 10px 0; float: left; }
+.aligncenter { margin: 0 auto; padding-bottom: 10px; display: block; }
+.alignright { margin: 0 0 10px 10px; float: right; }
+.alignnone { margin-bottom: 10px; display: block; }
+
+strong { font-weight: 600; }
+
+
+
+/* --- Header Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Header | #Login-form Styles --- */
+
+#Login-form { display: none; position: fixed; z-index: 2; }
+#Login-form .container { max-width: 500px; padding: 50px 15px; position: relative; }
+#Login-form .container .cancel { position: absolute; top: 51.5px; right: 15px; cursor: pointer; }
+#Login-form .container #loginform p { margin-bottom: 10px; }
+#Login-form .container #loginform p label { margin-bottom: 5px; }
+#Login-form .container #loginform p label, #Login-form .container #loginform p input { display: block; }
+#Login-form .container #loginform p input { line-height: 20px; width: 100%; padding: 10px; border: 1px solid; border-radius: 2px; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#Login-form .container #loginform p input[type^="checkbox"] { width: auto; margin: 3px 0; display: inline; }
+#Login-form .container #loginform p input[type^="submit"] { text-align: center; line-height: 48px; width: 200px; padding: 0 35px; border-radius: 5px; cursor: pointer; }
+#Login-form .container .login-error { text-align: center; line-height: 40px; border: 1px solid; border-radius: 5px; }
+
+/* --- Header | #Top-bar Styles --- */
+
+#Top-bar .container { padding: 20px 15px; }
+#Top-bar .container #Site-identity { float: left; }
+#Top-bar .container #Site-identity #Site-title { line-height: 70px; }
+#Top-bar .container #Navigation-bar { float: right; }
+#Top-bar .container #Navigation-bar #Navigation { float: left; }
+#Top-bar .container #Navigation-bar #Navigation .menu .menu-item { list-style: none; margin: 0 20px; float: left; }
+#Top-bar .container #Navigation-bar #Navigation .menu .menu-item:first-of-type { margin: 0 20px 0 0; }
+#Top-bar .container #Navigation-bar #Navigation .menu .menu-item:last-of-type { margin: 0 0 0 20px; }
+#Top-bar .container #Navigation-bar #Navigation .menu .menu-item a { line-height: 70px; cursor: pointer; }
+#Top-bar .container #Navigation-bar #Navimobile { display: none; float: left; }
+#Top-bar .container #Navigation-bar #Navimobile #Navicon { margin: 28px 0; cursor: pointer; }
+#Top-bar .container #Navigation-bar #Navimobile #Navicon .navicon-bar { width: 22px; height: 2px; margin-top: 4px; border-radius: 1px; display: block; }
+#Top-bar .container #Navigation-bar #Navimobile #Navicon .navicon-bar:first-of-type { margin-top: 0; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu { width: 200px; height: 100vh; padding: 0 15px; display: none; position: fixed; top: 0; right: 0; z-index: 1; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu.admin { margin-top: 32px; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu-cancel { margin: 15px 15px 0 0; position: absolute; top: 0; right: 0; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu { padding: 50px 0; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu .menu-item { list-style: none; margin-bottom: 5px; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu .menu-item:last-of-type { list-style: none; margin-bottom: 0; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu .menu-item a { padding: 10px; display: block; position: relative; cursor: pointer; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#Top-bar .container #Navigation-bar #Navimobile #Navimenu .menu .menu-item a:after { content: ""; width: 100%; border-bottom: 1px solid; display: block; position: absolute; left: 0; bottom: 0; }
+
+/* --- Header | #Breadcrumbs-bar Styles --- */
+
+#Breadcrumbs-bar.parallax { background-attachment: fixed !important; background-position: center !important; background-repeat: no-repeat !important; background-size: cover !important; }
+#Breadcrumbs-bar .container { height: 140px; padding: 0 15px; position: relative; }
+#Breadcrumbs-bar .container #Breadcrumbs { margin: 0 15px; border-radius: 5px 5px 0 0; position: absolute; bottom: 0; left: 0; }
+#Breadcrumbs-bar .container #Breadcrumbs ol li { list-style: none; line-height: 50px; padding: 0 15px; float: left; }
+#Breadcrumbs-bar .container #Breadcrumbs ol li a, #Breadcrumbs-bar .container #Breadcrumbs ol li span { padding: 0 15px; }
+#Breadcrumbs-bar .container #Breadcrumbs ol li.separator { padding: 0; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets { height: 50px; margin: 45px 0; float: right; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets { margin: 0 5px; float: left; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:only-of-type { margin: 0; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:first-of-type { margin: 0 5px 0 0; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets:last-of-type { margin: 0 0 0 5px; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets li { list-style: none; }
+#Breadcrumbs-bar .container #Breadcrumb-widgets .widgets li a { text-align: center; line-height: 48px; width: 245px; padding: 0 35px; border: 1px solid; border-radius: 5px; display: block; }
+
+
+
+/* --- Content Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Content | #404 Styles --- */
+
+#Error404 .container { text-align: center; overflow-x: hidden; }
+#Error404 .container h1 { font-weight: 600; margin-bottom: 20px; }
+#Error404 .container p { margin-bottom: 10px; }
+#Error404 .container p:last-of-type { margin-bottom: 0; }
+
+/* --- Content | #Blog-posts Styles --- */
+
+#Blog-posts .post-repository .post-wrapper { width: 100%; max-width: 303.33px; margin: 10px; display: inline-block; }
+#Blog-posts .post-repository .post-wrapper .post-thumbnail { width: 100%; max-width: 303.33px; min-height: 303.33px; display: inline-block; position: relative; overflow: hidden; }
+#Blog-posts .post-repository .post-wrapper .post-thumbnail.custom a img { height: 100%; max-width: none; margin: auto; display: block; position: absolute; top: -9999px; right: -9999px; bottom: -9999px; left: -9999px; }
+#Blog-posts .post-repository .post-wrapper .post-thumbnail.default a img { width: 100%; height: 100%; display: block; }
+#Blog-posts .post-repository .post-wrapper .post-thumbnail a:hover img { opacity: .8; }
+#Blog-posts .post-repository .post-wrapper .post-thumbnail a h3 { margin: 10px; position: absolute; bottom: 0; left: 0; }
+#Blog-posts .post-repository .post-wrapper .post-excerpt { width: 100%; padding: 10px; }
+#Blog-posts .post-repository .post-wrapper .post-excerpt .button { text-decoration: none; margin-top: 10px; padding: 10px 20px; border: 1px solid; border-radius: 5px; float: right; }
+
+/* --- Content | #Report-posts Styles --- */
+
+#Report-posts .container .form-print-wrapper { width: 100%; display: block; }
+#Report-posts .container .form-print-wrapper #form-print { text-align: center; line-height: 48px; padding: 0 35px; border: 1px solid; border-radius: 5px; float: right; cursor: pointer; }
+#Report-posts .container .form-wrapper { width: 100%; height: 100vh; padding: 25vh 0; display: none; position: fixed; top: 0; left: 0; z-index: 1; }
+#Report-posts .container .form-wrapper #Report-post { width: 100%; max-width: 810px; margin: 0 auto; padding: 0 20px; display: block; }
+#Report-posts .container #Report.post-container { width: 100%; margin-top: 50px; }
+#Report-posts .container #Report.post-container .post-wrapper { width: 100%; margin-bottom: 10px; border-bottom: 1px solid; padding: 15px 50px; }
+#Report-posts .container #Report.post-container .post-wrapper .post-title { float: left; }
+#Report-posts .container #Report.post-container .post-wrapper .post-meta { float: right; }
+#Report-posts .container #Report.post-container .post-wrapper .post-title h2,
+#Report-posts .container #Report.post-container .post-wrapper .post-title span,
+#Report-posts .container #Report.post-container .post-wrapper .post-meta span { line-height: 25px; display: block; }
+#Report-posts .container #Report.post-container .post-wrapper .post-meta span { text-align: right; }
+
+/* --- Content | #Garage-posts Styles --- */
+
+#Garage-posts .container .form-print-wrapper { width: 100%; display: block; }
+#Garage-posts .container .form-print-wrapper #form-print { text-align: center; line-height: 48px; padding: 0 35px; border: 1px solid; border-radius: 5px; float: right; cursor: pointer; }
+#Garage-posts .container .form-wrapper { width: 100%; height: 100vh; padding: 25vh 0; display: none; position: fixed; top: 0; left: 0; z-index: 1; }
+#Garage-posts .container .form-wrapper #Garage-post { width: 100%; max-width: 810px; margin: 0 auto; padding: 0 20px; display: block; }
+#Garage-posts .container #Garage.post-container { width: 100%; margin-top: 50px; }
+#Garage-posts .container #Garage.post-container .post-repository { width: 100%; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper { width: 100%; max-width: 303.33px; margin: 10px; display: inline-block; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-thumbnail { width: 100%; max-width: 303.33px; min-height: 303.33px; display: inline-block; position: relative; overflow: hidden; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-thumbnail.custom img { height: 100%; max-width: none; margin: auto; display: block; position: absolute; top: -9999px; right: -9999px; bottom: -9999px; left: -9999px; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-thumbnail.default img { width: 100%; height: 100%; display: block; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta { width: 100%; padding: 10px; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .post-title { margin-bottom: 10px; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .post-title a { display: block; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .post-owner { text-align: right; margin-bottom: 10px; display: block; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .contact-details { margin-bottom: 5px; display: block; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .contact-details:only-of-type,
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .contact-details:last-of-type { margin-bottom: 0; }
+#Garage-posts .container #Garage.post-container .post-repository .post-wrapper .post-meta .contact-details i { margin-right: 5px; }
+
+/* --- Content | #Results Styles --- */
+
+#Results .container .post-wrapper { width: 100%; margin-bottom: 10px; padding: 15px 50px; border-bottom: 1px solid; }
+#Results .container .post-wrapper:last-of-type { margin-bottom: 0; }
+#Results .container .post-wrapper .post-meta { float: left; }
+#Results .container .post-wrapper .post-meta h2,
+#Results .container .post-wrapper .post-meta span { line-height: 25px; display: block; }
+#Results .container .post-wrapper .post-meta span,
+#Results .container .post-wrapper .post-meta span a { font-size: 12px; }
+#Results .container .post-wrapper .read-more { float: right; }
+#Results .container .post-wrapper .read-more a { text-decoration: none; margin: 4.5px 0; padding: 10px 20px; border: 1px solid; border-radius: 5px; }
+
+
+/* --- Content | Single Post Styles --- */
+
+.single .container .post-title { text-align: center; width: 100%; }
+.single .container .post-title h2 { display: block; }
+
+/* --- Content | #Single-blog Post Styles --- */
+
+#Single-blog .container .post-meta { text-align: center; width: 100%; margin-top: 10px; }
+#Single-blog .container .post-meta ul { list-style: none; }
+#Single-blog .container .post-meta ul li, .single .container .post-meta ul li a { width: auto; display: inline; }
+#Single-blog .container .post-thumbnail { width: 100%; max-width: 600px; margin: 0 auto; padding: 25px 0 50px; display: block; }
+#Single-blog .container .post-thumbnail img { width: 100%; height: 100%; display: block; }
+#Single-blog .container .post-content { width: 100%; max-width: 800px; margin: 0 auto; }
+#Single-blog .container .post-content p { margin-bottom: 10px; display: block; }
+#Single-blog .container .post-content p:last-of-type { margin: 0; }
+
+/* --- Content | #Single-bad-debt Post Styles --- */
+
+#Single-bad-debt .container .post-meta { text-align: center; width: 100%; margin-top: 10px; }
+#Single-bad-debt .container .post-meta ul { list-style: none; }
+#Single-bad-debt .container .post-meta ul li, .single .container .post-meta ul li a { width: auto; display: inline; }
+#Single-bad-debt .container .post-wrapper { width: 100%; margin: 0 auto; padding-top: 50px; display: block; }
+#Single-bad-debt .container .post-wrapper .report-details { padding: 0 5px; float: left; }
+#Single-bad-debt .container .post-wrapper .report-details.vehicle { width: 25%; }
+#Single-bad-debt .container .post-wrapper .report-details.vehicle ul { list-style: none; }
+#Single-bad-debt .container .post-wrapper .report-details.vehicle ul li { margin-bottom: 5px; }
+#Single-bad-debt .container .post-wrapper .report-details.work { width: 75%; }
+
+/* --- Content | #Single-garage Post Styles --- */
+
+#Single-garage .container .post-wrapper { width: 100%; margin-top: 50px; }
+#Single-garage .container .post-wrapper .garage-details { width: 50%; padding: 0 5px; float: left; }
+#Single-garage .container .post-wrapper .garage-details.no-map { width: 100%; float: none; }
+#Single-garage .container .post-wrapper .garage-details .post-thumbnail { margin-bottom: 10px; }
+#Single-garage .container .post-wrapper .garage-details .post-thumbnail img { width: 100%; display: block; }
+#Single-garage .container .post-wrapper .garage-details .post-thumbnail,
+#Single-garage .container .post-wrapper .garage-details ul[class^="garage-"] { list-style: none; width: 50%; margin-bottom: 10px; padding: 0 5px; float: left; }
+#Single-garage .container .post-wrapper .garage-details .garage-contact { width: 100% !important; }
+#Single-garage .container .post-wrapper .garage-details.no-map .post-thumbnail,
+#Single-garage .container .post-wrapper .garage-details.no-map ul[class^="garage-"] { width: 25% !important; }
+#Single-garage .container .post-wrapper .garage-details ul[class^="garage-"] li { margin-bottom: 5px; }
+#Single-garage .container .post-wrapper .garage-details ul[class^="garage-"] li:last-of-type { margin: 0; }
+#Single-garage .container .post-wrapper .garage-details .garage-contact li i { margin-right: 5px; }
+#Single-garage .container .post-wrapper .post-map { width: 50%; padding: 0 5px; float: left; }
+#Single-garage .container .post-wrapper .post-map iframe { width: 100%; height: 250px; padding: 0 5px; display: block; }
+
+/* --- Content | Pagination Styles --- */
+
+.pagination-wrapper { text-align: center; width: 100%; margin-top: 50px; display: block; }
+.pagination-wrapper > nav > h2 { display: none; }
+.pagination-wrapper > nav .nav-links .page-numbers { line-height: 40px; width: 40px; margin: 0 5px; display: inline-block; }
+
+/* --- #Content | Comment Form Styles --- */
+
+#Comments .container { max-width: 700px; padding: 50px 0 0 0; }
+#Comments .container .comment-list { list-style: none; margin: 30px 0 0 0; }
+#Comments .container .comment-list .comment { margin-bottom: 20px; }
+#Comments .container .comment-list .comment:last-of-type { margin-bottom: 0; }
+#Comments .container .comment-list .comment .comment-meta { margin-bottom: 15px; }
+#Comments .container .comment-list .comment .comment-meta .comment-author { margin-bottom: 5px; position: relative; }
+#Comments .container .comment-list .comment .comment-meta .comment-author .photo { width: 50px; height: 50px; border-radius: 100%; position: absolute; top: 0; left: -60px; }
+#Comments .container .comment-list .comment .comment-content p { margin-bottom: 10px; }
+#Comments .container .comment-list .children { list-style: none; margin-left: 30px; }
+#Comments .container .comment-list .children .comment { margin-top: 20px; }
+#Comments .container .comment-list .children .comment-author .photo { width: 40px; height: 40px; border-radius: 100%; position: absolute; top: 0; left: -50px; }
+#Comments .container .pagination-wrapper { margin: 50px 0; }
+#Comments .comment-form .logged-in-as { margin-top: 5px; display: block; }
+#Comments .comment-form .logged-in-as { display: inline-block; }
+#Comments .comment-form label { font-weight: 600; display: block; }
+#Comments .comment-form textarea { width: 100%; max-width: 100%; height: 84px; margin: 10px 0; padding: 10px; border: 1px solid; border-radius: 2px; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#Comments .comment-form .submit { text-align: center; line-height: 48px; width: 200px; padding: 0 35px; border: 1px solid; border-radius: 5px; cursor: pointer; }
+
+/* --- Content | Form Styles --- */
+
+.form-control-full { width: 100%; float: left; }
+.form-control-half { width: 50%; float: left; }
+.form-control-third { width: 33.33%; float: left; }
+.form-control-quarter { width: 25%; float: left; }
+.form-group { width: 100%; margin-bottom: 10px; }
+div[class^="form-control"] { padding: 0 5px; position: relative; }
+div[class^="form-control"] .cancel { width: 19px; height: 19px; margin-right: 5px; float: right; }
+div[class^="form-control"] input { line-height: 20px; width: 100%; padding: 10px; border: 1px solid; border-radius: 2px; display: block; }
+div[class^="form-control"] input[type^="submit"] { text-align: center; line-height: 48px; width: 200px; padding: 0 35px; border-radius: 5px; cursor: pointer; }
+div[class^="form-control"] textarea { width: 100%; max-width: 100%; height: 84px; padding: 10px; border: 1px solid; border-radius: 2px; display: block; }
+div[class^="form-control"] .error-message { padding: 10px; display: none; position: absolute; z-index: 1; top: -44px; right: 5px; }
+div[class^="form-control"] .guide { margin-top: 10px; display: block; }
+
+
+
+/* --- Theme Footer Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Footer | #Footer-widgets-bar Styles --- */
+
+#Footer-widgets-bar .container { padding: 40px 15px; }
+#Footer-widgets-bar .container .full-width { text-align: center; width: 100%; max-width: 700px; margin: 0 auto; }
+#Footer-widgets-bar .container .half-width { width: 50%; float: left; }
+#Footer-widgets-bar .container .third-width { width: 33.33%; float: left; }
+#Footer-widgets-bar .container .quarter-width { width: 25%; float: left; }
+#Footer-widgets-bar .container div div.widget { width: 100%; padding: 0 20px; }
+#Footer-widgets-bar .container div .widget li { list-style: none; width: 100%; }
+#Footer-widgets-bar #Footer-divider { width: 100%; max-width: 500px; height: 1px; margin: 0 auto; }
+
+/* --- Footer | #Footnote-bar Styles --- */
+
+#Footnote-bar .container { padding: 0 15px; }
+#Footnote-bar .container p { text-align: center; line-height: 50px; width: 100%; }
+#Footnote-bar .container p a { text-decoration: underline; }
+#Footnote-bar .container li { list-style: none; width: 100%; }
+#Footnote-bar .container li div { text-align: center; line-height: 50px; width: 100%; }
+#Footnote-bar .container li div a { text-decoration: underline; }
+
+
+
+/* --- Theme Widgets Styles --- */
+
+/* --- ******************** ******************** ******************** --- */
+
+/* --- Widgets | .widget-title Styles --- */
+
+.widget-title { margin-bottom: 20px; display: block; }
+.widget-title:after { content: ""; margin-top: 10px; border-bottom: 1px solid; display: block; }
+
+/* --- Widgets | #Search-widget Styles --- */
+
+#Search-widget .widget-search { list-style: none; width: 100%; max-width: 340px; position: relative; }
+#Search-widget .widget-search .search-field { line-height: 36px; width: 100%; height: 40px; padding: 0 30px 0 15px; border: 2px solid; border-radius: 20px; }
+#Search-widget .widget-search .search-submit { text-align: center; line-height: 40px; width: 40px; position: absolute; top: 0; right: 0; cursor: pointer; }
+#Search-widget .widget-search .search-submit i { margin-right: 0; }
+
+/* --- Widgets | #Recent-reports-widget Styles --- */
+
+#Recent-reports-widget .reports-widget-wrapper { width: 100%; margin-bottom: 5px; }
+#Recent-reports-widget .reports-widget-wrapper:last-of-type { margin-bottom: 0; }
+#Recent-reports-widget .reports-widget-wrapper span { width: auto; margin-right: 3px; float: left; }
+#Recent-reports-widget .reports-widget-wrapper span:last-of-type { margin-right: 0 }
+#Recent-reports-widget .reports-widget-wrapper span a { text-decoration: underline; }
+
+/* --- Widgets | #Button-widget Styles --- */
+
+#Button-widget .button-wrapper { width: 100%; max-width: 340px; }
+#Button-widget .button-wrapper .button-widget { text-align: center; line-height: 36px; width: 100%; border: 2px solid; border-radius: 20px; display: block; }
